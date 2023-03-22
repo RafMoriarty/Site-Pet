@@ -1,0 +1,32 @@
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Quicksand';
+}
+
+h1{
+  font-size: 50px;
+}
+
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 30px; 
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+    text-decoration: none;
+  }
+  
+  a:link {
+
+    text-decoration: none;
+  }

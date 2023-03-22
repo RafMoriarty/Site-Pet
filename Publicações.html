@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html>
+<title>PETMAT UnB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="fotos/icon96.png" />
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="publi.css">
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  [class*="col-"] {
+  float: left;
+    }
+    .col-1 {width: 83%;}
+    .col-2{width: 17%}
+    .centralizar {
+     margin-top: 10px;
+    }
+    h3, h4, p, hr {
+      margin:0;
+    }
+
+  </style>
+</head>
+
+<! --------------------------------------------- COR DE FUNDO ---------------------------------------------------------------------------------->
+<body class="w3-white">
+
+<!--------------------------------------------- BARRA (ESCONDIDA EM TELA PEQUENA) ---------------------------------------------------------------->
+
+<!---<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">WORKSHOP <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">COMMITTEE</a>
+    <a href="index.html#sessao" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">SESSIONS</a>
+    <a href="index.html#participants" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">PARTICIPANTS</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">CONTACT</a>
+      </div>
+    </div>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-book w3-large"></i>Sobre</a>
+    <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-camera w3-large"></i>Fotos</a>
+    <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-pencil w3-large"></i>Inscrições</a>
+    <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-file-text w3-large"></i>Trabalhos</a>
+    <a href="local.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-map-marker w3-large"></i>Local</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-envelope w3-large"></i>Contato</a>
+    <div class="w4-dropdown-hover w3-hide-small">
+    </div>
+  </div>
+</div>------->
+
+
+<div class="w3-top">
+  <div class="w3-blue w3-wide w3-card w3-small" >
+
+    <a><img src="fotos/Logo2.png" style="max-width: 6%; margin: 5px;"></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-home "></i>Home</a>
+    <a href="Sobre.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-mortar-board "></i>Sobre o PET</a>
+  <a href="Atividades.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-book "></i>Atividades</a>
+    <a href="Eventos.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-calendar "></i>Eventos</a>
+  <a href="Membros.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-group "></i>Membros</a>
+  <a href="Publicações.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-pencil "></i>Publicações</a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-camera"></i>Fotos</a>
+  <a href="Contatos.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-envelope "></i>Contato</a>
+
+</div>
+</div>
+
+<!-- Navbar on small screens
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Home</a>
+  <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Sobre</a>
+  <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small>Fotos</a>
+  <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Inscrições</a>
+  <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large">Trabalhos</a>
+  <a href="local.html" class="w3-bar-item w3-button w3-padding-large">Local</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Contato</a>
+
+</div> -->
+
+
+
+<!---------------------------------------------- BARRA NA ESQUERDA EM TELAS PEQUENAS (CELULARES) ----------------------------------------------------->
+<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar"> -->
+  <!-- <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"> -->
+    <!-- <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">Home</a> -->
+    <!-- <a href="home.html#about" class="w3-bar-item w3-button" style="width:25% !important">Sobre</a> -->
+    <!-- <a href="fotos.html" class="w3-bar-item w3-button" style="width:25% !important">Fotos</a> -->
+    <!-- <a href="inscricoes.html" class="w3-bar-item w3-button" style="width:25% !important">Inscrições</a> -->
+    <!-- <a href="trabalhos.html" class="w3-bar-item w3-button" style="width:25% !important">Trabalhos</a> -->
+    <!-- <a href="home.html#contact" class="w3-bar-item w3-button" style="width:25% !important">Contato</a> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+<!------------------------------------------------------------------ IMAGEM INICIAL ------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------ Últimas publicações ------------------------------------------------------------->
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px;">
+  <h1 >Publicações</h1>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Alguns resultados de Álgebra Linear</b></h3>
+  <h4 style="margin-left: 30px;">Caio Tomás de Paula, Matheus de Freitas Souza e Prof. Dr. Lucas Conque Seco Ferreira - 2022</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">
+    Estas notas têm por objetivo registrar os tópicos discutidos durante a pesquisa individual do PETMAT realizada, pelos autores, ao longo do segundo semestre letivo de 2020. Os tópicos estudados vão desde uma definição mais adequada de subgrupo normal e uma discussão sobre quocientes, passando pelos subgrupos finitos de SO(3) e sua relação com os poliedros de Platão, pela simplicidade de SO(3), pela história e propriedades dos quatérnios e por uma demonstração alternativa do Teorema de Cayley-Hamilton utilizando o Teorema Fundamental dos Polinômios Simétricos.
+  </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="pub/Alguns_resultados_AL.pdf" target="_blank"> Download</a></button>
+</div>
+</div>
+
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Problemas de Máximos e Mínimos</b></h3>
+  <h4 style="margin-left: 30px;">Vários autores - 2022</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">
+    No ano de 2021, estudamos o livro, que trata de problemas de máximos e mínimos. Mais especificamente, o grupo foi dividido em equipes de duplas e trios, com cada equipe sendo responsável por estudar um capítulo da referência e apresentar ao restante do grupo os resultados deste estudo. Sendo assim, esse material é a coletânea, por escrito, de todos esses estudos.
+  </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="pub/Pesquisa_Coletiva__2021_.pdf" target="_blank"> Download</a></button>
+</div>
+</div>
+
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Notas do Minicurso de GAP</b></h3>
+  <h4 style="margin-left: 30px;">Ayrton Anjos - 2022</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">
+    Nestas notas faremos uma introdução ao software livre GAP. Apresentaremos primeiramente as funções básicas para trabalhar com números e listas e, por fim, funções para se trabalhar com grupos finitos. Como objetivo principal, veremos como calcular exemplos de grupos com elementos não-comutadores, além de outros exemplos de grupos satisfazendo certas hipóteses.
+  </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="pub/Minicurso_de_GAP.pdf" target="_blank"> Download</a></button>
+</div>
+</div>
+
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>O PET Matemática da Universidade de Brasília: 25 anos de história</b></h3>
+  <h4 style="margin-left: 30px;">Luciana Ávila, Caio Tomás, Matheus Souza - 2021</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">O PET Matemática da Universidade de Brasília completou, em 2020, 25 anos de
+    existência. Neste artigo, apresentamos a história, evolução, lutas e conquistas do grupo,
+    assim como a história geral, lutas e fases da criação e desenvolvimento do programa
+    PET em todo o Brasil. Além disso, discorremos sobre as atividades e comemorações
+    realizadas em celebração ao aniversário de 25 anos do PETMAT e, por último,
+    apresentamos os resultados de uma pesquisa realizada com os egressos do grupo com
+    o objetivo de traçar o perfil e analisar os impactos que a participação no programa
+    trouxe aos egressos.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1DoVt5m7enEw9qkjINQlD77SschTexUip/view?usp=sharing" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Uma introdução à Teoria de Jogos</b></h3>
+  <h4 style="margin-left: 30px;">Bárbara Guerra - 2020</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">A vida é feita de escolhas, tanto na nossa vida pessoal quanto profissional, é então natural querermos pensar em maneiras de escolher mais inteligentemente, de forma a minimizar riscos e procurar os melhores resultados. Começando baseado em jogos de sorte, a Teoria da Decisão é a área da matemática que modela esse tipo de situação, permitindo o estudo de como escolher otimamente nessas situações. Mas o ser humano é uma criatura social, dessa forma em todas as facetas de convivência humana em que é preciso fazer decisões é necessário sermos capazes de considerar como as escolhas dos demais envolvidos afetam nossas próprias escolhas. A forma de estudarmos esse comportamento e como podemos escolher otimamente nessas situações é a Teoria de Jogos, que surge a partir da Teoria da Decisão.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="https://drive.google.com/drive/folders/1h2-TPS_vzXqyG7jh-HK68UmDItVyVaTG" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Uma breve introdução às variedades diferenciáveis</b></h3>
+  <h4 style="margin-left: 30px;">Matheus Horácio - 2020</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">Nessas notas de aula damos uma breve introdução às variedades diferenciáveis, indo desde uma revisão de topologia geral básica à prova de que toda variedade diferenciável admite uma métrica Riemanniana.
+    </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1o76sO_u3_8GfZg3g5GPCjSUR2Lk54ZNj/view?usp=sharing" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>SECIAR: um modelo didático um pouco mais realista do que o SIR</b></h3>
+  <h4 style="margin-left: 30px;">Manoel Reis e Mauro Patrão - 2020</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">O que é mesmo a imunidade de rebanho? E o número de reprodução? Mesmo que não se
+    desenvolva uma vacina eficaz nos próximos anos, a estratégia de isolamento social e reabertura
+    repetidas vezes reduz o número de óbitos? Por que a SARS (2002) e a MERS (2012) não causaram tantos problemas quanto a pandemia do COVID-19? Neste artigo de divulgação, vamos
+    tentar responder essas perguntas através dos modelos SIR e SECIAR. Em matemática epidemiológica, o modelo precursor e mais amplamente utilizado é o SIR, principalmente devido à
+    sua simplicidade, que permite um fácil entendimento qualitativo das variáveis envolvidas. Vamos usar o SIR para tentar responder as três primeiras perguntas, enquanto a quarta pergunta
+    necessitará de uma extensão desse modelo, que denominamos de SECIAR.
+    </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1xd5GGph_h2jBfJ2hfIFOYPhUDKUedCCi/view?usp=sharing" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Noções em Combinatória com Grafos</b></h3>
+  <h4 style="margin-left: 30px;">Gabriel Dias do Couto - 2019</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">Essas são as notas de aula do Minicurso de Noções em Combinatória com Grafos
+    oferecido pelo PETMAT-UnB em 2/2019. Nele introduzimos o que é combinatória
+    a partir de um conteúdo intuitivo: a Teoria de Grafos. Ainda mais, aprendemos
+    algumas noções em combinatória probabilística..</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1ZYw8XlUvYgbUF9LPUTgL6U_JcfEKhCLP/view?usp=sharing" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Formas Diferenciais e o Método do Triedro Móvel</b></h3>
+  <h4 style="margin-left: 30px;">Vários autores - 2017</h4>
+  <p style="margin-left: 30px; color: rgb(75, 75, 75);">Neste trabalho estudamos o método do triedro móvel.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"  style="justify-content: center;"><i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1hGvWnC92M-CF3yg971rb0opdtX5HF4Mg/view?usp=sharing" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Introdução à Medida de Lebesgue e Integração</b></h3>
+  <h4 style="margin-left: 30px;">Deivid Vale - 2017</h4>
+  <p style="margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">Este trabalho é o resultado de notas de aula de um minicurso ministrado no departamento. Construímos e estudamos propriedades básicas da medida de Lebesgue.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1DLM06_tfuc5-qCJSCt0m8tnAXuJxdMqC/view?usp=sharing" target="_blank">Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Sistemas Dinâmicos Autônomos</b></h3>
+  <h4 style="margin-left: 30px;">Alexandre do Nascimento - 2017</h4>
+  <p style="text-align: justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">Este texto veio de um resumo de iniciação cientifica feito no PETMAT-UnB em 1/2015, enquanto estava na graduação e com algumas "melhoras" que fiz depois que fiz o curso de Sistemas dinâmicos não lineares. no mestrado do ICMC-USP. Faremos neste texto uma breve introdução à teoria de Sistemas Dinâmicos Não-Lineares, a qual tem bastantes tópicos interessantes de estudos, os quais podem ser estudados após a leitura deste texto.
+  </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1k0mK82XHpbJJXj06cxQBdyfhAMt5cxWv/view?usp=sharing" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Manual do cubo mágico 3x3x3</b></h3>
+  <h4 style="margin-left: 30px;">Pedro Gabriel Ferreira Jordão - 2017</h4>
+  <p style="text-align: justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">Este trabalho apresenta a história e curiosidades sobre o Cubo Mágico, além de apresentar um método para resolver o cubo.
+  </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1GIcyZXtxDk7XBdbaR_haBUvMNsvxy8Sd/view?usp=sharing" target="_blank"> Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Corpos Finitos Teoria e Aplicações</b></h3>
+  <h4 style="margin-left: 30px;">Vários Autores - 1998</h4>
+  <p style="text-align: justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">A recente difusão do uso do computador, disponibilizando enormes recursos a uma quantidade surpreendentemente grande de pessoas, encontrou nos conhecimentos matemáticos até aqui acumulados, e em particular na Álgebra, um apoio imprescindı́vel. Esse conhecimento, que não visava especificamente aplicações computacionais, pôde ser adaptado e modificado de forma a atender às mais diversas necessidades, como por exemplo a de garantir segurança no acesso remoto a dados bancários, a de implementar sistemas de controle de grandes estoques de mercadorias, ou ainda, fundamentalmente, a de assegurar confiabilidade em memorias de computadores. As aplicações computacionais, por sua vez, deram novo sentido e interesse a problemas antigos, além de gerarem novos e desafiantes problemas para a Matemática.
+  </p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1uORjZ4mOLrIZ1rD53DR6y-frWE6aocQZ/view?usp=sharing" target="_blank">Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Introdução ao Cálculo das Variações</b></h3>
+  <h4 style="margin-left: 30px;">Vários Autores - 1998</h4>
+  <p style="text-align:justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">O objetivo inicial dessas notas, redigidas pelos participantes das atividades do PET durante o segundo perı́odo letivo de 1998, foi de favorecer a capacidade de produção de textos em matemática. Essa atividade, muitas vezes relegada a um segundo plano nos cursos de graduação, é de extrema importância no processo de aprendizagem, por permitir que o estudante alcance um conhecimento estruturado, sem a fragmentação que muitas vezes ocorre nos cursos tradicionais.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1zHGUMHyFLSCTVP-baZ84h3R7iL1cLS6O/view?usp=sharing" target="_blank">Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>O Teorema de Jordan</b></h3>
+  <h4 style="margin-left: 30px;">Vários Autores - 1997</h4>
+  <p style="text-align:justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">Estas notas tiveram origem no seminário do PET do primeiro semestre de 1996. Nesse perı́odo os alunos realizaram, sob a minha orientação, uma série de exposições tendo por objetivo estudar o Teorema de Jordan para curvas do plano. Esse teorema afirma que uma curva de Jordan separa o plano em duas regiões, uma limitada e a outra ilimitada, sendo o traço da curva a fronteira comum das duas regiões. Esse resultado, que é bastante intuitivo, tem uma demonstração matemática elaborada.
+    </p>
+  </div>
+  <div class="col-2 centralizar">
+    <button class="btn"><i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1YjA7O8LVeqW-OpfdVlyvsgk-GQXfRaFz/view?usp=sharing" target="_blank">Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>O Grau Topológico de Brower</b></h3>
+  <h4 style="margin-left: 30px;">Vários Autores - 1996</h4>
+  <p style="text-align:justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">Estas notas refletem a convicção de que, com apenas os conhecimentos adquiridos nos cursos de cálculo, o aluno de graduação já seja capaz de entrar em contato com conceitos bem mais sofisticados do ponto de vista matemático. Esta foi a motivação da escolha deste tema, o grau topológico, que foi desenvolvido ao longo do primeiro semestre de 1997 como uma das atividades do programa PET.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1tQy1S8IsOR80lylioLXoMwwFRUg8tnEM/view?usp=sharing" target="_blank">Download</a></button>
+</div>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Métodos Variacionais - Uma Introdução</b></h3>
+  <h4 style="margin-left: 30px;">Vários Autores - 1996</h4>
+  <p style="text-align:justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">A presente monografia foi baseada no artigo do Prof. Djairo G. de Figueiredo entitulado Métodos Variacionais em Equações Diferencias e tem como objetivo explorar algumas técnicas de métodos variacionais aplicadas à resolução de problemas de equações diferencias. A partir de um problema desta natureza o que faremos é buscar uma formulação variacional cuja solução nos remeta à resolução do problema original. Tal formulação estará intimamente ligada à procura de pontos crı́ticos de um funcional apropriado. A exposição será feita de maneira inteiramente construtiva, isto é, na medida em que as dificuldades forem surgindo vamos introduzir elementos que nos permitam superá-las.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1iS0cjBbdLRruYd7AbVw8vf3PrwHa0Flb/view?usp=sharing" target="_blank">Download</a></button>
+</div>
+</div>
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+
+<div class="row">
+  <div class="col-1">
+  <h3 style="margin-left: 30px;"><b>Algumas Realizações de Charles Hermite</b></h3>
+  <h4 style="margin-left: 30px;">Marcelo Fernandes Furtado - 1996</h4>
+  <p style="text-align:justify; margin-left: 30px; margin-right: 30px; color: rgb(75, 75, 75);">A presente monografia tem como objetivo apresentar os trabalhos do matemático francês Charles Hermite e mostrar a importância destes trabalhos no desenvolvimento da ciência, não só no ramo da matemática, mas também nas teorias físicas originárias da primeira metade do século XX.</p>
+  </div>
+  <div class="col-2 centralizar">
+  <button class="btn"><i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1o9Tl9BRx80YrRqU6Rt_E02-a61mljowW/view?usp=sharing" target="_blank">Download</a></button>
+</div>
+</div>
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------ Atividades ------------------------------------------------------------->
+<!-- Portfolio Gallery Grid -->
+<!-----------------------------------------------        PALESTRANTES                 -------------------------------------------------------->
+
+  <!--<h2 class="w3-padding-16 w3-text-blue" id="palestrantes" ></h2>
+  <h2 class="w3-padding-16 w3-text-blue" >Palestrantes</h2><br><br>
+
+     <h2><strong>Robert D. Morris ("Rob" Morris)</h2></strong>- o professor Robert Morris (IMPA) ministrará um minicurso sobre <strong>combinatória</strong>:<br><br><img src="fotos/robertmorris.jpg" class="w3-border w3-padding" style="width:50%;height:50%;"> <br>
+    <br>Possui graduação e mestrado em matemática pela Universidade de Cambridge, no Reino Unido e doutorado em ciências matemáticas na Universidade de Memphis, nos Estados Unidos. Pesquisador e professor do IMPA, ganhou o prêmio SBM, faz parte da ABC (Academia Brasileira de Ciências) e atua principalmente nos temas: combinatória probabilística, grafos e processos aleatórios, teoria de grafos extremais, teoria de Ramsey, combinatória aditiva e autômatos celulares monótonos. <a href ="http://w3.impa.br/~rob/" target ="_blank">Link associado contendo mais informações.</a> <br><br>
+    </p>   <br>
+    <br>
+  
+
+    <h2><strong>Keti Tenenblat</strong></h2><br> <br><img src ="fotos/keti.jpg">
+    Possui graduação em matemática pela Universidade Federal do Rio de Janeiro, mestrado em matemática pela University of Michigan, doutorado em matemática pela Associação Instituto Nacional de Matemática Pura e Aplicada (IMPA) e pós-doutorado em matemática pela University of California Berkeley. Atualmente é professora emérita da Universidade de Brasília. Tem experiência na área de Matemática, com ênfase em Geometria Diferencial.
+    <br>
+    <br>
+    <br>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">30+</span><br>
+        Participantes
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">25+</span><br>
+        Trabalhos submetidos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">0+</span><br>
+        Plenaristas
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">16+</span><br>
+        Organizadores
+      </div>
+    </div>
+ </div>
+
+<!----------- <!------------------------------------------------------------------ Realização -------------------------------------------------------------
+<div class="w3-container w3-content w3-center w3-light-blue w3-padding-64 w3-full-width" style="max-width:3000px">
+  <div class="w3-container w3-content w3-left w3-light-blue w3-text-white w3-padding-64" style="max-width:600px" id="realizacao">
+    <h2 class="w3-text-white" style="w3-left">Realização</h2>
+        <!------ <center><hr style="width:2px w3-left" class="w3-opacity"></center> ---------- 
+     <p>
+        <img src="Logo2.png" class="w3-padding" style="width:50%;height:50%;">
+    </p>
+  <!-- End Contact Section --
+  </div>
+  
+  <div class="w3-container w3-content w3-right w3-light-blue w3-text-white w3-padding-64" style="max-width:600px" id="realizacao">
+    <h2 class="w3-text-white" style="w3-left">Apoio</h2>
+        <!------ <center><hr style="width:2px w3-left" class="w3-opacity"></center> ----------
+     <p>
+        <img src="fotos/as_bas_cor.jpg" class="w3-padding" style="width:50%;height:50%;">
+    </p>
+  <!-- End Contact Section --
+   </div>
+</div> ------------->
+
+<!------------------------------------------------------------------ CONTATO ------------------------------------------------------------->
+<div class="w3-content w3-center" style="position: relative; padding: 0px; min-width:100%;background-color: #2196f3;" id="contact">   
+  <h3 class="w3-padding-16" style="color: white; padding: 0px; border-top: 30px solid #1e86db;">Contato</h3>
+     <p style="color: white;">
+  <i class="fa fa-envelope" style="width:30px; color: white;"> </i> p3tmatunb@gmail.com<br>
+  <i class="fa fa-phone" style="width:30px; color: white;"></i> 61 3107-6481 <br>
+  <i class="fa fa-map-marker" style="width:30px; color: white;"></i> Universidade de Brasília, Brasília, Brasil<br>
+    </p>
+  <br>
+  <a href="https://www.facebook.com/PETMATUNB/" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a>
+    <i class="w3-big"><a href="https://www.instagram.com/petmatunb/" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a></i>>
+  </div>
+  
+<!------------------------------------------------------------- REDES SOCIAIS ---------------------------------------------------------->
+<!-----<div class="w3-container w3-content w3-center w3-light-blue w3-padding-64" style="max-width:3000px">
+  <footer class="w3-content w3-padding-64 w3-light-blue w3-center w3-text-white w3-xlarge">
+	<h3 class="w3-padding-16 w3-text-blue">Contato</h3>
+        <center><hr style="width:2px w3-center" class="w3-opacity"></center>
+     <p>
+	<i class="fa fa-envelope" style="width:30px"> </i> p3tmatunb@gmail.com<br>
+	<i class="fa fa-phone" style="width:30px"></i> 61 3107-6481 <br>
+	<i class="fa fa-map-marker" style="width:30px"></i> Universidade de Brasília, Brasília, Brasil<br>
+    </p>
+	
+	<i class="w3-big"><a href="https://www.facebook.com/xienapetmat/?__tn__=%2Cd%2CP-R&eid=ARBdWhNANWG_qcAD9wZFvXA-c_i3e7iBheT3luNOFCIJAnPFdZsXlWN55jFUgGmCtp0AvcOBPpOCuBX4" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a></i>
+    <i class="w3-big"><a href="https://www.instagram.com/xienapetmat/?hl=pt-br" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity"></i></a></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <!------ <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer
+  </footer>
+</div>
+<!-- END PAGE CONTENT -->
+
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+        button {
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color: white; color: black; border: 2px solid #008CBA;
+}
+        button:hover {  
+            background-color: #008CBA;
+            color: white;
+}
+        div {
+            margin-left: 320px;
+            margin-right:320px;
+            margin-bottom: 30px;
+
+        }
+        h2{
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+    </head>
+<body>
+    <!--------Botôes dias------>
+<div>
+    <h2>Selecione o dia que você nasceu</h2>
+    <button onclick="document.getElementById('demo').innerHTML=mudardia1()">01</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia2()">02</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia3()">03</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia4()">04</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia5()">05</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia6()">06</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia7()">07</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia8()">08</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia9()">09</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia10()">10</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia11()">11</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia12()">12</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia13()">13</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia14()">14</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia15()">15</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia16()">16</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia17()">17</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia18()">18</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia19()">19</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia20()">20</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia21()">21</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia22()">22</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudardia23()">23</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia24()">24</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia25()">25</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia26()">26</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia27()">27</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia28()">28</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia29()">29</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia30()">30</button>
+    <button  onclick="document.getElementById('demo').innerHTML=mudardia31()">31</button>
+</div>
+<!-------
+<div>
+    <button onclick="document.getElementById('dia').innerHTML=frase1 + d">pronto</button>
+</div>
+---------->
+<div>
+    <h2>Selecione o mês que você nasceu</h2>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm1()">01</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm2()">02</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm3()">03</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm4()">04</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm5()">05</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm6()">06</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm7()">07</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm8()">08</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm9()">09</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm10()">10</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm11()">11</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarm12()">12</button>
+</div>
+<!-------
+<div>
+    <button onclick="document.getElementById('mes').innerHTML=frase2 + m">pronto</button>
+</div>
+------>
+<div>
+    <h2>Nasceu em 2000 ou após esse ano?</h2>
+    <button onclick="document.getElementById('demo').innerHTML=mudarp1()">Sim</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarp2()">Não</button>
+</div>
+<div>
+    <h2>Qual o penúltimo dígito do ano que você nasceu? (Ex: 1978, marque 7)</h2>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda0()">0</button> 
+    <button onclick="document.getElementById('demo').innerHTML=mudarda1()">1</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda2()">2</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda3()">3</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda4()">4</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda5()">5</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda6()">6</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda7()">7</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda8()">8</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarda9()">9</button>
+</div>
+<div>
+    <h2>E o último? (Ex: 1978, marque 8)</h2>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua0()">0</button> 
+    <button onclick="document.getElementById('demo').innerHTML=mudarua1()">1</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua2()">2</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua3()">3</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua4()">4</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua5()">5</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua6()">6</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua7()">7</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua8()">8</button>
+    <button onclick="document.getElementById('demo').innerHTML=mudarua9()">9</button>
+</div>
+
+<!--------------
+<div>
+    <button onclick="document.getElementById('demo').innerHTML=escreverano()">pronto</button>
+</div>
+----------->
+<div>
+    <h2>Agora basta clicar no botão abaixo</h2>
+    <button onclick="document.getElementById('demo').innerHTML=dia_semana()">Calcular dia do nascimento</button>
+</div>
+<script>
+    // funções dia
+    function mudardia1() {
+        d=1
+}
+function mudardia2() {
+        d=2
+}    function mudardia3() {
+        d=3
+}    function mudardia4() {
+        d=4
+}    function mudardia5() {
+        d=5
+}    function mudardia6() {
+        d=6
+}    function mudardia7() {
+        d=7
+}    function mudardia8() {
+        d=8
+}    function mudardia9() {
+        d=9
+}    function mudardia10() {
+        d=10
+}    function mudardia11() {
+        d=11
+}    function mudardia12() {
+        d=12
+}    function mudardia13() {
+        d=13
+}    function mudardia14() {
+        d=14
+}    function mudardia15() {
+        d=15
+}    function mudardia16() {
+        d=16
+}    function mudardia17() {
+        d=17
+}    function mudardia18() {
+        d=18
+}    function mudardia19() {
+        d=19
+}    function mudardia20() {
+        d=20
+}    function mudardia21() {
+        d=21
+}    function mudardia22() {
+        d=22
+}    function mudardia23() {
+        d=23
+}    function mudardia24() {
+        d=24
+}    function mudardia25() {
+        d=25
+}    function mudardia26() {
+        d=26
+}    function mudardia27() {
+        d=27
+}    function mudardia28() {
+        d=28
+}    function mudardia29() {
+        d=29
+}    function mudardia30() {
+        d=30
+}    function mudardia31() {
+        d=31
+}
+//funções mês
+function mudarm1() {
+        m=1
+}
+function mudarm2() {
+        m=2
+}    function mudarm3() {
+        m=3
+}    function mudarm4() {
+        m=4
+}    function mudarm5() {
+        m=5
+}    function mudarm6() {
+        m=6
+}    function mudarm7() {
+        m=7
+}    function mudarm8() {
+        m=8
+}    function mudarm9() {
+        m=9
+}    function mudarm10() {
+        m=10
+}    function mudarm11() {
+        m=11
+}    function mudarm12() {
+        m=12
+}
+//função periodo
+function mudarp1() {
+        p=2000
+}
+function mudarp2() {
+        p=1900
+}
+// função dezenas ano
+function mudarda1() {
+        da=1
+}
+function mudarda2() {
+        da=2
+}    function mudarda3() {
+        da=3
+}    function mudarda4() {
+        da=4
+}    function mudarda5() {
+        da=5
+}    function mudarda6() {
+        da=6
+}    function mudarda7() {
+        da=7
+}    function mudarda8() {
+        da=8
+}    function mudarda9() {
+        da=9
+}    function mudarda0() {
+        da=0
+}
+//função unidade ano
+function mudarua1() {
+    ua=1
+}
+function mudarua2() {
+    ua=2
+}    function mudarua3() {
+    ua=3
+}    function mudarua4() {
+    ua=4
+}    function mudarua5() {
+        ua=5
+}    function mudarua6() {
+    ua=6
+}    function mudarua7() {
+    ua=7
+}    function mudarua8() {
+    ua=8
+}    function mudarua9() {
+    ua=9
+}    function mudarua0() {
+    ua=0
+}
+// função escrever ano
+function escreverano() {
+    anotodo=p+da*10+ua
+    document.getElementById('ano').innerHTML=frase3 + anotodo
+}
+//função calcular dia de nascimento
+function dia_semana() {
+    anotodo=p+da*10+ua  
+    var 
+    A=anotodo-1900,
+    D=d-1;
+    if (anotodo%4==0 || m==2) {B=(A/4) - (A%4)/4 - 1}
+    else if (anotodo%4==0 || m==1) {B=(A/4) - (A%4)/4 - 1}
+    else {B=(A/4) - (A%4)/4}
+    if (m==1 || m==10) {C=0}
+    else if (m==2 || m==3 || m==11) {C=3}
+    else if (m==4 || m==7) {C=6}
+    else if (m==5) {C=1}
+    else if (m==6) {C=4}
+    else if (m==8) {C=2}
+    else {C=5}
+    var S=A+B+C+D, r=S%7;
+    if (r==0) {document.getElementById('diadasemana').innerHTML="Você nasceu em uma segunda"}
+    else if (r==1) {document.getElementById('diadasemana').innerHTML="Você nasceu em uma terça"}
+    else if (r==2) {document.getElementById('diadasemana').innerHTML="Você nasceu em uma quarta"}
+    else if (r==3) {document.getElementById('diadasemana').innerHTML="Você nasceu em uma quinta"}
+    else if (r==4) {document.getElementById('diadasemana').innerHTML="Você nasceu em uma sexta"}
+    else if (r==5) {document.getElementById('diadasemana').innerHTML="Você nasceu em um sábado"}
+    else {document.getElementById('diadasemana').innerHTML="Você nasceu em um domingo"}
+}
+    var d=0, m=0, p=0, da=0, ua=0,anotodo="a", frase1="Você nasceu no dia ", frase2="Você nasceu no mês ", frase3="Você nasceu no ano ";
+</script>
+<p id='dia'></p>
+<p id='mes'></p>
+<p id='ano'></p>
+<h1 id='diadasemana'></p>
+</body>
+</html>

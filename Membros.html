@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html>
+<title>PETMAT UnB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="fotos/icon96.png" />
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="membros.css">
+<head>
+<style>
+  .colunalista {
+    columns: 100px 3;
+  }
+  * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(0, 123, 160);
+  box-shadow: 2px 2px 3px rgb(143, 143, 143);
+  background-color: #2196f3;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  padding:8px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  float:left;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #74c0fd;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top:none;
+}
+
+</style>
+</head>
+
+<!--------------------------------------------- COR DE FUNDO ---------------------------------------------------------------------------------->
+<body class="w3-white">
+
+<!--------------------------------------------- BARRA (ESCONDIDA EM TELA PEQUENA) ---------------------------------------------------------------->
+
+<!---<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">WORKSHOP <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">COMMITTEE</a>
+    <a href="index.html#sessao" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">SESSIONS</a>
+    <a href="index.html#participants" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">PARTICIPANTS</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">CONTACT</a>
+      </div>
+    </div>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-book w3-large"></i>Sobre</a>
+    <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-camera w3-large"></i>Fotos</a>
+    <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-pencil w3-large"></i>Inscrições</a>
+    <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-file-text w3-large"></i>Trabalhos</a>
+    <a href="local.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-map-marker w3-large"></i>Local</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-envelope w3-large"></i>Contato</a>
+    <div class="w4-dropdown-hover w3-hide-small">
+    </div>
+  </div>
+</div>------->
+
+
+<div class="w3-top">
+  <div class="w3-blue w3-wide w3-card w3-small" >
+
+  <!-------------Avatar image in top left corner img src="Logo2.png" style="height:100%" ---------->
+  <a><img src="fotos/Logo2.png" style="max-width: 6%; margin: 5px;"></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none;">
+    <i class="fa fa-home "></i>Home</a>
+    <a href="Sobre.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-mortar-board "></i>Sobre o PET</a>
+  <a href="Atividades.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-book "></i>Atividades</a>
+    <a href="Eventos.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-calendar "></i>Eventos</a>
+  <a href="Membros.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-group "></i>Membros</a>
+  <a href="Publicações.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-pencil "></i>Publicações</a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-camera"></i>Fotos</a>
+  <a href="Contatos.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-envelope "></i>Contato</a>
+
+</div>
+</div>
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px;">
+<h1 >Membros</h1>
+</div>
+<p style="margin-left:15px;">O PET é um programa institucional que trabalha no formato de grupo composto por um professor tutor, 12 alunos bolsistas e até 6 alunos não bolsistas. </p>
+<div style="margin-top: 33px;">
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">PETianos atuais</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Tutores</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">PETianos egressos</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <br>
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="fotos/membros/anita.jpeg" alt="Lights" style="width:70%">
+          <h3>Anita Boaventura</h3>
+        </div>
+      </div>
+          <div class="column">
+            <div class="content">
+              <img src="fotos/membros/davi.jpg" alt="Lights" style="width:70%">
+              <h3>Davi Batisaco</h3>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="fotos/membros/henrique.png" alt="Mountains" style="width:70%">
+              <h3>Henrique Monteiro</h3>
+            </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="fotos/membros/isadora.jpeg" alt="Lights" style="width:70%">
+            <h3>Isadora Teles</h3>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="fotos/membros/JoãoVítor.jpeg" alt="Lights" style="width:70%">
+            <h3>João Vitor Teixeira</h3>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="fotos/membros/livia.jpeg" alt="Lights" style="width:70%">
+            <h3>Lívia Nascimento</h3>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="fotos/membros/MatheusFrota.jpg" alt="Lights" style="width:70%">
+            <h3>Matheus Frota</h3>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="fotos/membros/pedro.png" alt="Mountains" style="width:70%">
+            <h3>Pedro Cusinato</h3>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="fotos/membros/rafael.jpeg" alt="Lights" style="width:70%">
+            <h3>Rafael Almeida</h3>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="fotos/membros/riquelme.png" alt="Mountains" style="width:70%">
+            <h3>Riquelme Santos</h3>
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+</div>
+<div id="Paris" class="tabcontent">
+  <h2 style="text-align: center;">Tutora atual</h2>
+  <br>
+  <div style="text-align: center;">
+      <img src="fotos/membros/luciana.jpg" alt="Lights" style="width:12%;">
+      <h3>Luciana Ávila</h3>
+    </div>
+    <br><br><br>
+    <h2>Tutores egressos</h2>
+    <ui>
+        <li>Celius Antônio Magalhães</li>
+        <li>Hemar Teixeira Godinho</li>
+        <li>João Carlos Nascimento de Pádua</li>
+        <li>Mauro Luiz Rabelo</li>
+    </ui>
+  </div>
+
+
+
+<div id="Tokyo" class="tabcontent">
+  <br>
+  <ul class="colunalista">
+    <li>Adler Vieira Marques</li>
+    <li>Alexandre D. Maia</li>
+    <li>Alexandre do Nascimento de Oliveira Sousa</li>
+    <li>Aline Gomes da Silva Pinto</li>
+    <li>Allan Matheus Cardoso Neto</li>
+    <li>Amadeus Cabral Maldonado</li>
+    <li>Ana Paula B. Marcelino</li>
+    <li>Angélica Félix Laurindo Silva</li>
+    <li>Ângelo Bezerra de Lima</li>
+    <li>Ayrton Anjos Teixeira</li>
+    <li>Bárbara Guerra Ribeiro</li>
+    <li>Caio Tomás de Paula</li>
+    <li>Carlos Renato de Melo Castro</li>
+    <li>Claud Wagner Gonçalves Dias Júnior</li>
+    <li>Cleida de Assis Coutinho</li>
+    <li>Cynara F. da Rocha</li>
+    <li>Dahisy Valadão de Souza Lima</li>
+    <li>Daniel Cavalcante Oliveira</li>
+    <li>Daniela Amorim Amato</li>
+    <li>Davi Correa</li>
+    <li>Débora B. Ferreira</li>
+    <li>Deborah Pereira Domingues</li>
+    <li>Deivid Rodrigues do Vale</li>
+    <li>Edson Alves da Costa Júnior</li>
+    <li>Elaine C. Kimura</li>
+    <li>Ewerson G. de Sousa</li>
+    <li>Ewerton Rocha Vieira</li>
+    <li>Fernando L. Madeira</li>
+    <li>Fernando Meyer Fontes</li>
+    <li>Filipe Balduino Pires Fernandes</li>
+    <li>Francisca das Chagas Alves Lemos</li>
+    <li>Gabriel Dias do Couto</li>
+    <li>Gabriel Mesquita dos Santos</li>
+    <li>Gabriel Nóbrega Bufolo</li>
+    <li>Gabriel Silva Carvalho</li>
+    <li>Gabrielly Girardi Reis</li>
+    <li>Geiza S. Botelho</li>
+    <li>George Demetrios Fernandes Leitão Kiametis</li>
+    <li>Giulia Albuquerque de Oliveira</li>
+    <li>Guilherme Borges Brandão</li>
+    <li>Guilherme Gennari Sobrinho</li>
+    <li>Gustavo Silva Marques de Paula</li>
+    <li>Hanna Carolina da Silva Rezende</li>
+    <li>Henrique R. de Oliveira</li>
+    <li>Henrique Rennó Zannata</li>
+    <li>Herbert Luan Silva</li>
+    <li>Jéssyca Cristine Lima de Souza</li>
+    <li>Jhames Matos Sampaio</li>
+    <li>Jorge Lucas de Azevedo Ribeiro</li>
+    <li>Josimar da Silva Rocha</li>
+    <li>Juliana Cordeiro da Cunha</li>
+    <li>José Teixeira Moura Júnior</li>
+    <li>Laércio M. S. Souto</li>
+    <li>Leonardo Bezerra Coelho</li>
+    <li>Leandro Chiarini Medeiros</li>
+    <li>Leandro F. Ramos</li>
+    <li>Leonardo Melo Batista</li>
+    <li>Leonardo R. M. F. Maciel</li>
+    <li>Lia Feitosa Beaklini</li>
+    <li>Lucas Bispo da Cruz</li>
+    <li>Lucas Conque Seco Ferreira</li>
+    <li>Lucas Durães da Silva</li>
+    <li>Luciana Lima Ventura</li>
+    <li>Luciano Sasaki Cordeiro</li>
+    <li>Luis Fernando Mendes de Cury</li>
+    <li>Luis Henrique de Miranda</li>
+    <li>Luiz C. S. Galvão</li>
+    <li>Luverci do Nascimento Ferreira</li>
+    <li>Manoel Fernando dos Reis</li>
+    <li>Marcelo Fernandes Furtado</li>
+    <li>Marcelo S. Teixeira</li>
+    <li>Marcelo Santos Novais</li>
+    <li>Marcos Vinícius Borges Teixeira Lima</li>
+    <li>Marcus Vinicius Teixeira Borba</li>
+    <li>Marina Gabriella Ribeiro Bardella</li>
+    <li>Mariana Motta Andrade Puga</li>
+    <li>Maryane da S. M. Figueredo</li>
+    <li>Mateus de Andrade Cruz Dutra</li>
+    <li>Matheus Andrade Ribeiro de Moura Horácio</li>
+    <li>Matheus Bernardini de Souza</li>
+    <li>Matheus de Freitas Souza</li>
+    <li>Maxwell L. da Silva</li>
+    <li>Mayra Camelo Madeira de Moura</li>
+    <li>Melissa de Sousa Luiz</li>
+    <li>Michael Marcondes de Freitas</li>
+    <li>Nailson Andrade da Silva</li>
+    <li>Olímpio Ribeiro Gomes</li>
+    <li>Paulo Henrique Pereira da Costa</li>
+    <li>Pedro Gabriel Ferreira Jordão</li>
+    <li>Pedro Matos Correia de Souza</li>
+    <li>Phillipo Lappicy Lemos Gomes</li>
+    <li>Rafael Meira Carvalho Lino</li>
+    <li>Railandi Sousa Assunção</li>
+    <li>Rebeca Chuffi Saccochi</li>
+    <li>Renato Bianchini</li>
+    <li>Renato Ferreira de Velloso Vianna</li>
+    <li>Ricardo Augusto Brito Dantas</li>
+    <li>Ricardo J. S. Matos</li>
+    <li>Roberta Paula Brandão de Novais</li>
+    <li>Roberto de Santana Araújo</li>
+    <li>Roberto dos Santos Melo Oliveira</li>
+    <li>Robson Alves Nascimento Filho</li>
+    <li>Rodrigo Duarte Freitas de Oliveira Porto</li>
+    <li>Santiago Prado Parentes Fortes</li>
+    <li>Seabra Fernando Alves Pimenta</li>
+    <li>Sérgio Leandro Nascimento Neves</li>
+    <li>Solange Maria da Conceição Gonçalves</li>
+    <li>Tainá Luara Ferreira Salles</li>
+    <li>Thales Filipe D. de Souza</li>
+    <li>Thailany Machado dos Santos</li>
+    <li>Thais Regina Duarte Marçal</li>
+    <li>Thiago Drummond</li>
+    <li>Thiago Raposo Milhomem de Carvalho</li>
+    <li>Tiago Almeida de Araújo</li>
+    <li>Ulisses D. da Silva</li>
+    <li>Victor Barbosa Jatobá</li>
+    <li>Victor Hugo Cardoso Simões</li>
+    <li>Vitória Soares dos Santos</li>
+    <li>Wanessa Muricy Silva</li>
+    <li>Wesley de Freitas Mendes</li>
+    <li>Wescley Well Vicente Bezerra</li>
+    <li>Yuri Santos Rego</li>
+  </ul> 
+</div>
+</div>
+<div class="w3-content w3-center" style="position: relative; padding: 0px; min-width:100%;background-color: #2196f3;" id="contact">   
+	<h3 class="w3-padding-16" style="color: white; padding: 0px; border-top: 30px solid #1e86db;">Contato</h3>
+     <p style="color: white;">
+	<i class="fa fa-envelope" style="width:30px; color: white;"> </i> p3tmatunb@gmail.com<br>
+	<i class="fa fa-phone" style="width:30px; color: white;"></i> 61 3107-6481 <br>
+	<i class="fa fa-map-marker" style="width:30px; color: white;"></i> Universidade de Brasília, Brasília, Brasil<br>
+    </p>
+	<br>
+	<a href="https://www.facebook.com/PETMATUNB/" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a>
+    <i class="w3-big"><a href="https://www.instagram.com/petmatunb/" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a></i>
+  </div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<!-- Navbar on small screens
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Home</a>
+  <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Sobre</a>
+  <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small>Fotos</a>
+  <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Inscrições</a>
+  <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large">Trabalhos</a>
+  <a href="local.html" class="w3-bar-item w3-button w3-padding-large">Local</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Contato</a>
+
+</div> -->
+
+
+
+<!---------------------------------------------- BARRA NA ESQUERDA EM TELAS PEQUENAS (CELULARES) ----------------------------------------------------->
+<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar"> -->
+  <!-- <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"> -->
+    <!-- <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">Home</a> -->
+    <!-- <a href="home.html#about" class="w3-bar-item w3-button" style="width:25% !important">Sobre</a> -->
+    <!-- <a href="fotos.html" class="w3-bar-item w3-button" style="width:25% !important">Fotos</a> -->
+    <!-- <a href="inscricoes.html" class="w3-bar-item w3-button" style="width:25% !important">Inscrições</a> -->
+    <!-- <a href="trabalhos.html" class="w3-bar-item w3-button" style="width:25% !important">Trabalhos</a> -->
+    <!-- <a href="home.html#contact" class="w3-bar-item w3-button" style="width:25% !important">Contato</a> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+
+
+
+<!------------------------------------------------------------------ CONTATO ------------------------------------------------------------->
+ <!-----
+<div class="w3-container w3-content w3-center w3-white w3-padding-64" style="max-width:2500px">
+ <div class="w3-content w3-center w3-text-grey w3-padding-64" style="max-width:900px" id="contact">   
+	<h3 class="w3-padding-16 w3-text-blue">Contato</h3>
+     <p>
+	<i class="fa fa-envelope" style="width:30px"> </i> p3tmatunb@gmail.com<br>
+	<i class="fa fa-phone" style="width:30px"></i> 61 3107-6481 <br>
+	<i class="fa fa-map-marker" style="width:30px"></i> Universidade de Brasília, Brasília, Brasil<br>
+    </p>
+	<br>
+	<a href="https://www.facebook.com/PETMATUNB/" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="width:40px"></i></a>
+    <i class="w3-big"><a href="https://www.instagram.com/petmatunb/" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="width:40px"></i></a></i>
+  </div>
+  </div>
+  ------------->
+  
+
+
+</body>
+
+</html>

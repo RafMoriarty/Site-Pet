@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html>
+<title>PETMAT UnB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="fotos/icon96.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<link rel="stylesheet" href="ativ.css">
+<head>
+ <style>
+  .texto {text-indent:40px;
+    margin-left:30px;margin-right:30px;text-align:justify;}
+  h2 {text-indent:40px;
+  font-weight:bold;text-align: justify;}
+  hr {border:1px solid green}
+
+
+</style>
+</head>
+
+<body class="w3-white">
+
+<!--------------------------------------------- BARRA (ESCONDIDA EM TELA PEQUENA) ---------------------------------------------------------------->
+
+<!---<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">WORKSHOP <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">COMMITTEE</a>
+    <a href="index.html#sessao" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">SESSIONS</a>
+    <a href="index.html#participants" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">PARTICIPANTS</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">CONTACT</a>
+      </div>
+    </div>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-book w3-large"></i>Sobre</a>
+    <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-camera w3-large"></i>Fotos</a>
+    <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-pencil w3-large"></i>Inscrições</a>
+    <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-file-text w3-large"></i>Trabalhos</a>
+    <a href="local.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-map-marker w3-large"></i>Local</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-envelope w3-large"></i>Contato</a>
+    <div class="w4-dropdown-hover w3-hide-small">
+    </div>
+  </div>
+</div>------->
+
+
+<div class="w3-top">
+  <div class="w3-blue w3-wide w3-card w3-small" >
+
+  <!-------------Avatar image in top left corner img src="logo.png" style="height:100%" ---------->
+  <a><img src="fotos/Logo2.png" style="max-width: 6%; margin: 5px;"></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-home "></i>Home</a>
+    <a href="Sobre.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-mortar-board "></i>Sobre o PET</a>
+  <a href="Atividades.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-book "></i>Atividades</a>
+  <a href="Eventos.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-calendar "></i>Eventos</a>
+  <a href="Membros.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-group "></i>Membros</a>
+  <a href="Publicações.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-pencil "></i>Publicações</a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-camera"></i>Fotos</a>
+  <a href="Contatos.html" class="w3-bar-item w3-button w3-hover-white">
+    <i class="fa fa-envelope "></i>Contato</a>
+
+</div>
+</div>
+
+<!-- Navbar on small screens
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Home</a>
+  <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Sobre</a>
+  <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small>Fotos</a>
+  <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Inscrições</a>
+  <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large">Trabalhos</a>
+  <a href="local.html" class="w3-bar-item w3-button w3-padding-large">Local</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Contato</a>
+
+</div> -->
+
+
+
+<!---------------------------------------------- BARRA NA ESQUERDA EM TELAS PEQUENAS (CELULARES) ----------------------------------------------------->
+<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar"> -->
+  <!-- <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"> -->
+    <!-- <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">Home</a> -->
+    <!-- <a href="home.html#about" class="w3-bar-item w3-button" style="width:25% !important">Sobre</a> -->
+    <!-- <a href="fotos.html" class="w3-bar-item w3-button" style="width:25% !important">Fotos</a> -->
+    <!-- <a href="inscricoes.html" class="w3-bar-item w3-button" style="width:25% !important">Inscrições</a> -->
+    <!-- <a href="trabalhos.html" class="w3-bar-item w3-button" style="width:25% !important">Trabalhos</a> -->
+    <!-- <a href="home.html#contact" class="w3-bar-item w3-button" style="width:25% !important">Contato</a> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+<!------------------------------------------------------------------ Atividades ------------------------------------------------------------->
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px;">
+  <h1 style="margin: 20px;" >Atividades</h1>
+</div>
+<div>
+  <P class="texto">As atividades desenvolvidas pelo PETMAT consideram a temática da indissociabilidade entre ensino, pesquisa e extensão no âmbito da graduação. No ano de 2021, as atividades que estão em desenvolvimento são:</P>
+</div>
+
+<hr style="border-top: 1px solid rgb(197, 197, 197);">
+<div> 
+
+<h2>PETMAT Eventos - Participação</h2>
+<p>Essa atividade inclui participação em eventos acadêmicos e científicos e em eventos do PET. Nos
+  eventos do PET pretendemos participar do ENAPET, ECOPET, ENAPET MAT. Em eventos
+  acadêmicos e científicos pretendemos participar da Semana Universitária, da Mostra de Cursos, da
+  Semana Nacional de Ciência e Tecnologia, do Colóquios Regionais, do Colóquio do IMPA, da Escola
+  de Geometria, da Escola de Álgebra, da Bienal de Matemática, da Escola de Verão do MAT UnB, do
+  Workshop do MAT UnB, do Circuito de Vivências em Educação Matemática, daGeometria Natalina,
+  entre outros. Nessa atividade também está prevista a participação dos petianos em cursos de verão
+  na UnB, no IMPA (Instituto de Matemática Pura e Aplicada) e em outras Instituições de Ensino
+  Superior do país. Por meio dessas atividades, os petianos têm a oportunidade de entrarem em
+  contato com uma realidade muitas vezes diferente da vivenciada por eles, usufruindo de uma troca
+  de experiências e saberes que contribuem para uma formação cidadã e para a atuação profissional
+  futura.
+  </p>
+
+<hr>
+<h2>PETMAT Eventos - Organização</h2>
+<p class="texto">Essa atividade inclui a organização de eventos. Em 2022, pretendemos organizar os seguintes
+  eventos: Lançamento do e-book dos 25 anos do PETMAT (o livro foi elaborado em 2021); Dia
+  Nacional da Matemática (dia 6 de Maio celebramos do dia nacional da matemática em Homenagem
+  ao matemático Malba Tahan); Celebração das mulheres na Matemática ( dia 12 de maio celebramos
+  as mulheres na matemática, este dia foi escolhido em homenagem a matemática indiana Maryam
+  Mirzakhani) ; 60 anos do MAT UnB (o departamento de matemática, juntamente com a unB,
+  comemora 60 anos em 2022 e serão realizadas atividades em comemoração) e momentos culturais
+  (com a exibição de filmes ou peças teatrais). Além disso, ajudaremos, de acordo com a demanda, na
+  organização de outras possíveis atividades realizadas pelo departamento de Matemática, ou pela
+  Comissão de extensão ou em parceria com a SBEM/DF</p><hr>
+
+  <h2>Clube do Livro</h2>
+  <p class="texto">Um clube do livro, também conhecido como clube de leitura, é um clube social onde pessoas normalmente se encontram para discutir sobre um livro que acabaram de ler, expressando suas opiniões, críticas, etc. Nos dias de hoje se faz necessário o hábito da leitura pois é notório que isto se reflete na formação ampla de cada indivíduo. O Clube do livro tem como objetivo principal, incentivar os petianos a desenvolver o hábito pela leitura, contribuindo com o desenvolvimento do seu intelecto, como também funcionar com um espaço provocativo à leitura em geral, incentivando o hábito da leitura, a pesquisa de estudo, auxiliar na elaboração dos trabalhos acadêmicos e realizações de ações que fomentem o incentivo à leitura.</p>
+<hr>
+
+  <h2>PET com PET</h2>
+<p class="texto"> Nessa atividade o PET Matemática irá convidar outros grupos PET da UnB e de outras instituições
+  do Ensino Superior à partilhar suas experiências como grupo PET, socializando conhecimentos e
+  divulgando as atividades que cada grupo faz. 
+</p>
+<hr>
+
+<h2>PETMAT Minicursos</h2>
+<p class="texto">A atividade PETMAT Minicursos visa dar ofertar minicursos, em diversas áreas da matemática.
+ O objetivo é aprofundar a formação acadêmica dos participantes, abordando temas relevantes geralmente não vistos durante os cursos básicos da graduação. Neste ano pretendemos
+ oferecer minicursos novos baseados nos conteúdos estudados na pesquisa individual, como o
+ minicurso de GAP, e coletiva dos petianos e ainda continuar a oferecer um minicurso utilizando o
+ software matemático GeoGebra. Os minicursos poderão ser apresentados em eventos científicos no
+ departamento de matemática e eventos nacionais como ENAPET, ENAPET MAT, ECOPET, Semana
+ Universitária, Semana da Matemática, Colóquios Regionais de Matemáticas entre outros.
+</p><hr>
+<h2>PETMAT Minicurso de Latex</h2>
+<p class="texto">Esta é uma atividade voltada para o aprendizado de novas tecnologias. O Latex é um software que permite a edição de textos científicos, que envolvem linguagem matemática/simbólica, com qualidade bastante superior aos demais editores de texto, por possibilitar a inserção de símbolos matemáticos e outros recursos pouco usuais em editores de texto comuns. É um programa ideal para edição de artigos, monografias e livros, possibilitando a inserção de figuras, gráficos, tabelas e notações matemáticas. Além disso, o Latex cria apresentações em pdf, ideais para defesa de teses, de dissertações e apresentação de trabalhos. 
+</p>
+<hr>
+<h2>PETMAT Monitorias</h2>
+<p class="texto">A atividade PETMAT monitorias é uma atividade de monitoria voluntária desenvolvida pelos petianos e tem-se caracterizado por atividades presenciais. 
+São feitas monitorias em várias disciplinas como por exemplo: Matemática 1, Cálculo 1, Cálculo 2, Cálculo 3, Introdução à Álgebra Linear, Análise 1, Topologia Geral, Álgebra, Métodos Matemáticos da Física, entre outras. Estas disciplinas são cursadas por estudantes das engenharias, da estatística, da geologia e da matemática, entre outros. Além disso, podem ser ofertadas monitorias em disciplinas do curso de bacharelado em matemática, como Análise 2 e 3, Álgebra 1, 2 e 3 e Geometria Diferencial. 
+</p><hr>
+
+<h2>PETMAT Pesquisa Coletiva</h2>
+ <p class="texto">  A atividade PETMAT-Pesquisa Coletiva consiste no estudo coletivo de um tema escolhido pelos integrantes do grupo. A atividade pode ser feita em forma de minicursos, aulas, ou estudos dirigidos. 
+ Esperamos com a pesquisa coletiva que os PETianos  desenvolvam habilidades para trabalhar em grupo, além de desenvolver habilidades que permitam compreender o tema estudado e desenvolver seus conhecimentos sobre o tema. Neste ano, na atividade PETMAT-Pesquisa Coletiva, estudaremos sobre máximos e mínimos,
+ problemas de otimização e problemas variacional. O livro texto será Stories about maxima e minima,
+ do autor V. W. Tikromirov </p>
+ </p>
+ <hr>
+ <h2>PETMAT Pesquisa Individual</h2>
+ <p class="texto">A atividade PETMAT-Pesquisa individual é uma atividade de iniciação científica, tradicional do grupo, que conta com a participação de vários professores do departamento de matemática e outros departamentos que se dispuseram a orientar os integrantes do PETMAT. Cada aluno é orientado por um professor que direciona o aluno a estudar um tema de sua área de pesquisa. 
+ Os objetivos da atividade são voltados para a formação ampla dos petianos, incentivando-os à pesquisa e a iniciação científica. Além disso, espera-se uma interação entre os docentes e petianos, propiciando uma troca de experiência e saberes que são indispensáveis à formação ampla dos envolvidos.
+</p>
+<hr>
+ <h2>PETMAT Recepção aos Calouros da Matemática</h2>
+ <p class="texto">A atividade PETMAT Recepção aos calouros da Matemática tem como público-alvo os calouros dos cursos de matemática e calouros de outros cursos da UnB que têm, em sua grade curricular, alguma disciplina ofertada pela Matemática. É realizada na segunda semana de aula do semestre letivo. 
+ Tem como objetivo promover atividades amplas aos calouros de graduação, desenvolvendo uma sequência de atividades coordenadas pelos petianos e orientadas pela tutora, que objetivam promover e divulgar estudos nas áreas de especialidade do departamento de matemática, dando assim uma visão ampla do curso. Além disso, propicia acolhimento dos calouros e uma interação entre os calouros, os membros do grupo PET e o curso de matemática da UnB
+</p>
+<hr>
+<h2>PETMAT Seminários</h2>
+<p class="texto">A atividade PETMAT Seminários ocorre no final do semestre e consiste de apresentações orais, feitas pelos PETianos, em forma de palestras ou minicursos. Os trabalhos apresentados são resultados dos estudos feitos nas atividades de pesquisa individual e pesquisa coletiva.
+</p><hr>
+
+ <h2>PETMAT Tics</h2>
+ <p class="texto">A atividade PET MAT Tics consiste na divulgação das atividades realizadas pelo grupo nas mídias
+  sociais do PET Matemática: site, Facebook, Instagram e Youtube, e também no site do departamento
+  de matemática e nas redes sociais do departamento de matemática e em vários outros locais e meios
+  de divulgação digital.</p>
+  <hr>
+
+<h2>Participação em reuniões administrativas e em
+  instâncias deliberativas do PET</h2>
+  <p class="texto">
+    Essa atividade prevê a participação dos petianos em reuniões administrativas do grupo e em
+    instâncias deliberativas do PET como, por exemplo, InterPET e CLAA. Por reuniões administrativas
+    entendemos como as reuniões onde são decididas, planejadas, executadas e avaliadas as atividades
+    do grupo. Também faz parte a participação nos processos seletivos de novos integrantes do grupo,
+    no acolhimento dos novos integrantes, nas reuniões de organização de eventos promovidas e
+    convocadas pela comissão de extensão do IE, pela SBEM/DF e pelas coordenações de eventos. Por
+    participação em instâncias deliberativas do PET entendemos como a representação do PETMAT na
+    InterPET e no CLAA, bem como a participação desses representantes nessas reuniões.
+  </p>
+  <hr>
+<div style="text-align: right; text-decoration: none; margin-right:1% ;">
+  <p>Veja também atividades que realizamos em <a href="Atividades2020.html" style="text-decoration: none; color: #1e86db;">2020</a> e <a href="Atividades2021.html" style="text-decoration: none; color: #1e86db;">2021</a>
+  </p>
+</div>
+<div class="w3-content w3-center" style="position: relative; padding: 0px; min-width:100%;background-color: #2196f3;" id="contact">   
+	<h3 class="w3-padding-16" style="color: white; padding: 0px; border-top: 30px solid #1e86db;">Contato</h3>
+     <p style="color: white;">
+	<i class="fa fa-envelope" style="width:30px; color: white;"> </i> p3tmatunb@gmail.com<br>
+	<i class="fa fa-phone" style="width:30px; color: white;"></i> 61 3107-6481 <br>
+	<i class="fa fa-map-marker" style="width:30px; color: white;"></i> Universidade de Brasília, Brasília, Brasil<br>
+    </p>
+	<br>
+	<a href="https://www.facebook.com/PETMATUNB/" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a>
+    <i class="w3-big"><a href="https://www.instagram.com/petmatunb/" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a></i>
+  </div>
+
+
+
+<!------------------------------------------------------------------ Pesquisa, Ensino e Extensão ------------------------------------------------------------->
+	  
+
+
+<!------------------------------------------------------------------ Atividades ------------------------------------------------------------->
+
+
+<!-----------------------------------------------        PALESTRANTES                 -------------------------------------------------------->
+
+  <!--<h2 class="w3-padding-16 w3-text-blue" id="palestrantes" ></h2>
+  <h2 class="w3-padding-16 w3-text-blue" >Palestrantes</h2><br><br>
+
+     <h2><strong>Robert D. Morris ("Rob" Morris)</h2></strong>- o professor Robert Morris (IMPA) ministrará um minicurso sobre <strong>combinatória</strong>:<br><br><img src="fotos/robertmorris.jpg" class="w3-border w3-padding" style="width:50%;height:50%;"> <br>
+    <br>Possui graduação e mestrado em matemática pela Universidade de Cambridge, no Reino Unido e doutorado em ciências matemáticas na Universidade de Memphis, nos Estados Unidos. Pesquisador e professor do IMPA, ganhou o prêmio SBM, faz parte da ABC (Academia Brasileira de Ciências) e atua principalmente nos temas: combinatória probabilística, grafos e processos aleatórios, teoria de grafos extremais, teoria de Ramsey, combinatória aditiva e autômatos celulares monótonos. <a href ="http://w3.impa.br/~rob/" target ="_blank">Link associado contendo mais informações.</a> <br><br>
+    </p>   <br>
+    <br>
+  
+
+    <h2><strong>Keti Tenenblat</strong></h2><br> <br><img src ="fotos/keti.jpg">
+    Possui graduação em matemática pela Universidade Federal do Rio de Janeiro, mestrado em matemática pela University of Michigan, doutorado em matemática pela Associação Instituto Nacional de Matemática Pura e Aplicada (IMPA) e pós-doutorado em matemática pela University of California Berkeley. Atualmente é professora emérita da Universidade de Brasília. Tem experiência na área de Matemática, com ênfase em Geometria Diferencial.
+    <br>
+    <br>
+    <br>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">30+</span><br>
+        Participantes
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">25+</span><br>
+        Trabalhos submetidos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">0+</span><br>
+        Plenaristas
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">16+</span><br>
+        Organizadores
+      </div>
+    </div>
+ </div>
+
+<!----------- <!------------------------------------------------------------------ Realização -------------------------------------------------------------
+<div class="w3-container w3-content w3-center w3-light-blue w3-padding-64 w3-full-width" style="max-width:3000px">
+  <div class="w3-container w3-content w3-left w3-light-blue w3-text-white w3-padding-64" style="max-width:600px" id="realizacao">
+    <h2 class="w3-text-white" style="w3-left">Realização</h2>
+        <!------ <center><hr style="width:2px w3-left" class="w3-opacity"></center> ---------- 
+     <p>
+        <img src="Logo2.png" class="w3-padding" style="width:50%;height:50%;">
+    </p>
+  <!-- End Contact Section --
+  </div>
+  
+  <div class="w3-container w3-content w3-right w3-light-blue w3-text-white w3-padding-64" style="max-width:600px" id="realizacao">
+    <h2 class="w3-text-white" style="w3-left">Apoio</h2>
+        <!------ <center><hr style="width:2px w3-left" class="w3-opacity"></center> ----------
+     <p>
+        <img src="fotos/as_bas_cor.jpg" class="w3-padding" style="width:50%;height:50%;">
+    </p>
+  <!-- End Contact Section --
+   </div>
+</div> ------------->
+
+<!------------------------------------------------------------------ CONTATO ------------------------------------------------------------->
+ 
+<!------------------------------------------------------------- REDES SOCIAIS ---------------------------------------------------------->
+<!-----<div class="w3-container w3-content w3-center w3-light-blue w3-padding-64" style="max-width:3000px">
+  <footer class="w3-content w3-padding-64 w3-light-blue w3-center w3-text-white w3-xlarge">
+	<h3 class="w3-padding-16 w3-text-blue">Contato</h3>
+        <center><hr style="width:2px w3-center" class="w3-opacity"></center>
+     <p>
+	<i class="fa fa-envelope" style="width:30px"> </i> p3tmatunb@gmail.com<br>
+	<i class="fa fa-phone" style="width:30px"></i> 61 3107-6481 <br>
+	<i class="fa fa-map-marker" style="width:30px"></i> Universidade de Brasília, Brasília, Brasil<br>
+    </p>
+	
+	<i class="w3-big"><a href="https://www.facebook.com/xienapetmat/?__tn__=%2Cd%2CP-R&eid=ARBdWhNANWG_qcAD9wZFvXA-c_i3e7iBheT3luNOFCIJAnPFdZsXlWN55jFUgGmCtp0AvcOBPpOCuBX4" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a></i>
+    <i class="w3-big"><a href="https://www.instagram.com/xienapetmat/?hl=pt-br" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity"></i></a></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <!------ <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer
+  </footer>
+</div>
+<!-- END PAGE CONTENT -->
+
+</body>
+
+</html>

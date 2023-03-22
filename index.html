@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<title>PETMAT UnB</title>
+<meta charset="UTF-8">
+
+<link rel="icon" type="image/png" href="fotos/icon96.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="news-slider.css" rel="stylesheet">
+<style>
+  .semlinha {
+    text-decoration: none;
+ }
+ * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 5px;
+}
+.left {
+  width: 75%;
+}
+.right {
+  width: 25%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<!--------------------------------------------- COR DE FUNDO ---------------------------------------------------------------------------------->
+<body class="w3-white">
+<!--------------------------------------------- BARRA (ESCONDIDA EM TELA PEQUENA) ---------------------------------------------------------------->
+
+<!---<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">WORKSHOP <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">COMMITTEE</a>
+    <a href="index.html#sessao" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">SESSIONS</a>
+    <a href="index.html#participants" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">PARTICIPANTS</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">CONTACT</a>
+      </div>
+    </div>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-home w3-large"></i>Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-book w3-large"></i>Sobre</a>
+    <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-camera w3-large"></i>Fotos</a>
+    <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-pencil w3-large"></i>Inscrições</a>
+    <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-file-text w3-large"></i>Trabalhos</a>
+    <a href="local.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-map-marker w3-large"></i>Local</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">
+		<i class="fa fa-envelope w3-large"></i>Contato</a>
+    <div class="w4-dropdown-hover w3-hide-small">
+    </div>
+  </div>
+</div>------->
+
+
+<div class="w3-top">
+  <div class="w3-blue w3-wide w3-card w3-small" >
+
+  <!-------------Avatar image in top left corner img src="logo.png" style="height:100%" ---------->
+  <a><img src="fotos/Logo2.png" style="max-width: 6%; margin: 5px;"></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none; font-family: Segoe UI;">
+    <i class="fa fa-home "></i>Home</a>
+    <a href="Sobre.html" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none; font-family: Segoe UI;">
+      <i class="fa fa-mortar-board "></i>Sobre o PET</a>
+  <a href="Atividades.html" class="w3-bar-item w3-button w3-hover-white"  style="text-decoration: none; font-family: Segoe UI;">
+    <i class="fa fa-book "></i>Atividades</a>
+    <a href="Eventos.html" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none; font-family: Segoe UI;">
+      <i class="fa fa-calendar"></i>Eventos</a>
+  <a href="Membros.html" class="w3-bar-item w3-button w3-hover-white"  style="text-decoration: none; font-family: Segoe UI;">
+    <i class="fa fa-group "></i>Membros</a>
+  <a href="Publicações.html" class="w3-bar-item w3-button w3-hover-white"  style="text-decoration: none; font-family: Segoe UI;">
+    <i class="fa fa-pencil "></i>Publicações</a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-hover-white"  style="text-decoration: none; font-family: Segoe UI;">
+      <i class="fa fa-camera"></i>Fotos</a>
+  <a href="Contatos.html" class="w3-bar-item w3-button w3-hover-white"  style="text-decoration: none; font-family: Segoe UI;">
+    <i class="fa fa-envelope "></i>Contato</a>
+
+</div>
+</div>
+<!-- Navbar on small screens
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Home</a>
+  <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Sobre</a>
+  <a href="fotos.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small>Fotos</a>
+  <a href="inscricoes.html" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Inscrições</a>
+  <a href="trabalhos.html" class="w3-bar-item w3-button w3-padding-large">Trabalhos</a>
+  <a href="local.html" class="w3-bar-item w3-button w3-padding-large">Local</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" w3-hide-small">Contato</a>
+
+</div> -->
+
+
+
+<!---------------------------------------------- BARRA NA ESQUERDA EM TELAS PEQUENAS (CELULARES) ----------------------------------------------------->
+
+
+<!------------------------------------------------------------------ IMAGEM INICIAL ------------------------------------------------------------->
+
+
+
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+	<br>
+ <img src="fotos/logopetsite2.png" alt="boy" class="w3-image" style="padding: 0px;">
+  </header>
+</div>  
+<hr style="border-top:1px solid #bbbbbb;">
+<hr style="float: right;">
+<h1 style="text-align: center;  margin-left:30px">Notícias</h1>
+<div class="row" style="margin: 20px;">
+  <div class="column left" style="border-right: 1px solid #aaaaaa;">
+<div class="slideshow-container">
+  <!---Como fazer
+  <a href="https://www.instagram.com/p/CNk-bWbl_3y/" target="_blank">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="fotos/matearte2.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div></a>-->
+    <a href="https://drive.google.com/file/d/1gg3UCTcFJsVQDzSf1OKoZlGqpeqMATc9/view?usp=sharing" target="_blank">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="fotos/SELEÇÃO-site.png" style="width:100%">
+        <div class="text"></div>
+      </div></a>
+    <a href="https://www.instagram.com/p/Cc9VAiusUAK/" target="_blank">
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="fotos/ebook25anos.png" style="width:100%">
+        <div class="text"></div>
+      </div></a>
+      
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  </div>
+  <div class="column right" style="margin: 1px solid black">
+    <div>
+      <img src="fotos/ebook.jpg" style="float:left; height: 50px;margin-left: 2px;">
+    <h5 style=" margin-left: 7px; font-weight: bold;">Ebook 25 Anos do PET Matemática da UnB</h5>
+    <p style=" margin-left: 7px;">Acesso ao <a href="https://drive.google.com/file/d/1rxrDdKJpdbS8KzID08mPpmBr6UdnJ77y/view?usp=sharing" target="_blank">livro</a>. Acesso ao <a href="https://issuu.com/lfeditorial/docs/25_anos_do_petmat_digital" target="_blank">livro digital.</a></p>
+    <hr></div>
+    <div>
+      <img src="fotos/redessociais.png" style="float:left; height: 50px;margin-left: 2px;" >
+    <h5 style=" margin-left: 7px; font-weight: bold;">PETMAT NAS REDES SOCIAIS</h5>
+    <p style=" margin-left: 7px;">Siga nosso <a href="https://www.instagram.com/petmatunb/" target="_blank">Instagram</a> e curta nossa <a href="https://www.facebook.com/PETMATUNB/" target="_blank">página</a> do Facebook para não perder as atividades que nosso grupo desenvolve.</p>
+    <hr></div>
+    <div>
+      <img src="fotos/youtube.jpg" style="float:left; height: 50px;margin-left: 2px;">
+    <h5 style=" margin-left: 7px; font-weight: bold;">CONHEÇA NOSSO CANAL DO YOUTUBE</h5>
+    <p style=" margin-left: 7px;">O PETMAT UnB também tem um <a href="https://www.youtube.com/channel/UCCX089nvCT2PV691PP_AVzQ" target="_blank">canal</a> no Youtube, temos vídeos, minicursos, oficinas e outras coisas, se inscreva para não perder nenhum dos nossos vídeos.
+    </p>
+    <hr></div>
+    <a href="Noticias.html"><p style="left: 70%;position: relative; font-size: small;">Mais notícias</p></a>
+  </div>
+</div>
+
+ <div class="w3-content w3-center" style="position: relative; padding: 0px; min-width:100%;background-color: #2196f3;" id="contact" >   
+	<h3 class="w3-padding-16" style="color: white; padding: 0px; border-top: 30px solid #1e86db;">Contato</h3>
+     <p style="color: white;">
+	<i class="fa fa-envelope" style="width:30px; color: white;"> </i> p3tmatunb@gmail.com<br>
+	<i class="fa fa-phone" style="width:30px; color: white;"></i> 61 3107-6481 <br>
+	<i class="fa fa-map-marker" style="width:30px; color: white;"></i> Universidade de Brasília, Brasília, Brasil<br>
+    </p>
+	<br>
+	<a href="https://www.facebook.com/PETMATUNB/" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a>
+    <i class="w3-big"><a href="https://www.instagram.com/petmatunb/" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="width:40px; color: white;"></i></a></i>
+  </div>
+</body>
+</html>
